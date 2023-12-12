@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Piano Assignment - N.Lawal</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+   <div class="caption">
+    <h1>Do-Re-Mi on Piano - Click to Play!</h1>
+   </div>
+    <div class="container">
+      <div class="whitekeysContainer">
+        <div class="whiteKey" id="whiteKey1" onclick="playsound('notes/do-80236.mp3')">A</div>
+        <div class="whiteKey" id="whiteKey2" onclick="playsound('notes/re-78500.mp3')">S</div>
+        <div class="whiteKey" id="whiteKey3" onclick="playsound('notes/mi-80239.mp3')">D</div>
+        <div class="whiteKey" id="whiteKey4" onclick="playsound('notes/fa-78409.mp3')">F</div>
+        <div class="whiteKey" id="whiteKey5" onclick="playsound('notes/sol-101774.mp3')">G</div>
+        <div class="whiteKey" id="whiteKey6" onclick="playsound('notes/la-80237.mp3')">H</div>
+        <div class="whiteKey" id="whiteKey7" onclick="playsound('notes/si-80238.mp3')">J</div>
+        <div class="whiteKey" id="whiteKey8" onclick="playsound('notes/doh.mp3')">K</div>
+        <div class="whiteKey" id="whiteKey9" onclick="playsound('notes/doh.mp3')">L</div>
+        <div class="whiteKey" id="whiteKey10" onclick="playsound('notes/E_major.wav')">;</div>
+      </div>
+      <div class="blackkeysContainer">
+        <div class="blackKey" id="blackKey1" onclick="playsound('notes/si-80238.mp3')">W</div>
+        <div class="blackKey" id="blackKey2" onclick="playsound('notes/la-80237.mp3')">E</div>
+        <div class="blackKey" id="blackKey3" onclick="playsound('notes/sol-101774.mp3')">T</div>
+        <div class="blackKey" id="blackKey4" onclick="playsound('notes/fa-78409.mp3')">Y</div>
+        <div class="blackKey" id="blackKey5" onclick="playsound('notes/mi-80239.mp3')">U</div>
+        <div class="blackKey" id="blackKey6" onclick="playsound('notes/re-78500.mp3')">O</div>
+        <div class="blackKey" id="blackKey7" onclick="playsound('notes/do-80236.mp3')">P</div>
+      </div>
+    </div>
+    <script>
+      function playsound(keyNote){
+        let audio = new Audio(keyNote)
+        audio.play()
+      }
+    </script>
+  </body>
+
+</html>
